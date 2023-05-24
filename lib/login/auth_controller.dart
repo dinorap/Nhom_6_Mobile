@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_weather_app_v2/login/login_page.dart';
+import 'package:flutter_weather_app_v2/login/singup_page.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -68,22 +69,36 @@ class AuthController extends GetxController {
   void login(String email, String password) async {
     try {
       await auth.signInWithEmailAndPassword(email: email, password: password);
+
+      // Show success message
+      Get.snackbar(
+        "About Login",
+        "Login Successful",
+        backgroundColor: Colors.greenAccent,
+        snackPosition: SnackPosition.BOTTOM,
+        titleText: Text(
+          "Login Success",
+          style: TextStyle(color: Colors.white),
+        ),
+      );
     } catch (e) {
       Get.snackbar(
-          "About Login",
-          "Login message",
-          backgroundColor: Colors.redAccent,
-          snackPosition: SnackPosition.BOTTOM,
-          titleText: Text(
-            "Login Fail",
-            style: TextStyle(color: Colors.white),
-          ),
-          messageText: Text(
-            e.toString(),
-            style: TextStyle(color: Colors.white),
-          ));
+        "About Login",
+        "Login message",
+        backgroundColor: Colors.redAccent,
+        snackPosition: SnackPosition.BOTTOM,
+        titleText: Text(
+          "Login Fail",
+          style: TextStyle(color: Colors.white),
+        ),
+        messageText: Text(
+          e.toString(),
+          style: TextStyle(color: Colors.white),
+        ),
+      );
     }
   }
+
 
   void logout() async {
     await auth.signOut();
@@ -118,14 +133,13 @@ class AuthController extends GetxController {
 
     try {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
-      resetSuccess = true;
-
       Get.snackbar(
         "Reset Password",
         "An email has been sent to $email to reset your password.",
         backgroundColor: Colors.greenAccent,
         snackPosition: SnackPosition.BOTTOM,
       );
+      resetSuccess = true;
     } catch (e) {
       Get.snackbar(
         "Reset Password",
@@ -141,9 +155,9 @@ class AuthController extends GetxController {
           style: TextStyle(color: Colors.white),
         ),
       );
+    } finally {
+      return resetSuccess;
     }
-
-    return resetSuccess;
   }
 
 

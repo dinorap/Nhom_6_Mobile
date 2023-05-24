@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10427576-ce05-47a4-9ee9-fa148506c85d" name="Changes" comment="">
+    <list default="true" id="f51612b2-f909-407d-b6d0-4a3f00732ce8" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/PngItem_4855093.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/clear.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/cloud.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/cloudy.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/fog.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/heavycloudy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/heavyrain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/heavyrain2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/humidity.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/lightdrizzle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/lightrain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/lightrainshower.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/loginbtn.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/loginimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/mist.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/moderateorheavyrainshower.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/moderateorheavyrainwiththunder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/moderaterain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/moderaterainattimes.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/night.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/overcast.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/partlycloudy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/patchylightdrizzle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/patchylightrain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/patchylightrainwiththunder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/patchyrainpossible.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/profile1.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/rainy.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/signup.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/sunny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/sunnyy.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../assets/t.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/thunderyoutbreakspossible.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/torrentialrainshower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/windspeed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/login/ForgotPasswordPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/login/Splash_screen.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lib/login/auth_controller.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lib/login/login_page.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lib/login/singup_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/new/auth_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/new/home.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/new/login.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/new/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/ui/ChangePasswordPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/ui/ProfilePage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/ui/location_helper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
@@ -35,7 +75,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2PLV8WUBimzJYoXCtkMWGWl1BVG" />
+  <component name="ProjectId" id="2Q9TuyZ7hoFm4kyRcuV27nFS3R4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,11 +91,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="10427576-ce05-47a4-9ee9-fa148506c85d" name="Changes" comment="" />
-      <created>1683236189646</created>
+      <changelist id="f51612b2-f909-407d-b6d0-4a3f00732ce8" name="Changes" comment="" />
+      <created>1684765023706</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683236189646</updated>
+      <updated>1684765023706</updated>
     </task>
     <servers />
   </component>

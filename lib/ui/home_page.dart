@@ -11,6 +11,7 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import '../login/auth_controller.dart';
 import 'ChangePasswordPage.dart';
 import 'ProfilePage.dart';
+import 'location_helper.dart';
 
 class HomePage extends StatefulWidget {
   String email;
@@ -25,9 +26,9 @@ class _HomePageState extends State<HomePage> {
   final Constants _constants = Constants();
 
   static String API_KEY =
-      'fc4f5bb5a7cc433093245452230405'; //Paste Your API Here
+      'ba50bab67a7645189d773819231405'; //Paste Your API Here
   String? bgIm;
-  String location = 'Ha Noi'; //Default location
+  String location =''; //Default location
   String weatherIcon = 'sunny';
   int temperature = 0;
   int windSpeed = 0;
@@ -44,7 +45,20 @@ class _HomePageState extends State<HomePage> {
   String searchWeatherAPI = "https://api.weatherapi.com/v1/forecast.json?key=" +
       API_KEY +
       "&days=7&q=";
+  void _getCurrentLocation() async {
+    String? currentAddress = await LocationHelper.getCurrentAddress();
 
+    setState(() {
+      if (currentAddress != null) {
+        location = currentAddress!;
+      } else {
+        location = 'Ha Noi';
+      }
+    });
+
+    // Fetch weather data using the current address
+    fetchWeatherData(location);
+  }
   void fetchWeatherData(String searchText) async {
     try {
       var searchResult =
@@ -83,6 +97,7 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+
   //function to return the first two names of the string location
   static String getShortLocationName(String s) {
     List<String> wordList = s.split(" ");
@@ -100,7 +115,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    fetchWeatherData(location);
+    _getCurrentLocation();
     super.initState();
   }
 
@@ -503,7 +518,7 @@ class _HomePageState extends State<HomePage> {
                                 forecastTime,
                                 style: TextStyle(
                                   fontSize: 17,
-                                  color: Colors.white,
+                                  color: currentHour == forecastHour ? Colors.black : Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -517,7 +532,7 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     forecastTemperature,
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: currentHour == forecastHour ? Colors.black : Colors.white,
                                       fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -525,7 +540,7 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     '°',
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: currentHour == forecastHour ? Colors.black : Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 19,
                                       fontFeatures: const [
